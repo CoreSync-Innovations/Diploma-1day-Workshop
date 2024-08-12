@@ -2,7 +2,7 @@
 module fa (
               input  wire a, 
               input  wire b,
-  			      input  wire carry_in,
+              input  wire carry_in,
               output wire sum, 
               output wire carry_out
   		    );
