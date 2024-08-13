@@ -40,13 +40,5 @@ initial begin
   $finish;
 end
   
-/*
-initial begin
-	$display("---------------------------------------------------------------------------------------------------");
-  	$display("Reset\t\tClock\t\t\Input\t\tOutput");
-	$display("---------------------------------------------------------------------------------------------------");
-  	$monitor("%b\t\t%b\t\t%b\t\t%b",rstn,clk,d_in,q);  
-end
-*/
-  
+
 endmodule
