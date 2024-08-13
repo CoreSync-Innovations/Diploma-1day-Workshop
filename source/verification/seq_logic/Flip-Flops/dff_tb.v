@@ -6,10 +6,10 @@ wire   q;
   
 DFF flop (
                 .rstn(rstn),
-    			.clk(clk),
-    			.d_in(d_in),
-    			.q(q)  
-  		 );  
+    			      .clk(clk),
+    			      .d_in(d_in),
+    			      .q(q)  
+  		   );  
    
 always #5 clk =  ~clk;
   
