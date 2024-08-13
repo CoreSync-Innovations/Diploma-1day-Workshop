@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module enable_mux_2_to_1_tb ();
 
 reg  a;

@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module fa_tb();
   
 reg  a,b,carry_in;

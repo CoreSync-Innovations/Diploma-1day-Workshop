@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module ha_tb();
   
 reg  a,b;
