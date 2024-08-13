@@ -1,9 +1,9 @@
 `timescale 1ns/1ps
 module N_bit_UP_counter_tb #(parameter N = 3)();
 
-reg 			clk,rstn;
+reg 			    clk,rstn;
 wire [N-1:0] 	count_out;
-wire			done;
+wire			    done;
 
 N_bit_UP_counter counter_1      (
                                       .clk(clk),
