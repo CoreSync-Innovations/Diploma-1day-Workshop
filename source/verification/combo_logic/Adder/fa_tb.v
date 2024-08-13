@@ -13,7 +13,7 @@ fa  i_adder(
            );
 
 initial begin
-  				{a,b,carry_in} = {3'b000}; #50;
+                {a,b,carry_in} = {3'b000}; #50;
                 {a,b,carry_in} = {3'b001}; #50;
                 {a,b,carry_in} = {3'b010}; #50;
                 {a,b,carry_in} = {3'b011}; #50;
