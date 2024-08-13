@@ -14,7 +14,7 @@ always @ (posedge clk or negedge rstn) begin
   else begin
     if(count_out == '0) begin
          	count_out  <= '1;
-    		done       <= 1'b1;
+          done       <= 1'b1;
     end
     else begin
           	count_out  <= count_out - 1;
