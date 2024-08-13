@@ -1,5 +1,5 @@
 module N_bit_DN_counter # (parameter N = 3) 
-  						  (
+                (
                     input  wire           rstn,
                     input  wire           clk,
                     output reg            done,
