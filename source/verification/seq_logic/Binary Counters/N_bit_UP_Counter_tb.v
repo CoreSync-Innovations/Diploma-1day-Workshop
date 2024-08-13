@@ -2,8 +2,8 @@
 module N_bit_UP_counter_tb #(parameter N = 3)();
 
 reg 			    clk,rstn;
-wire [N-1:0]    count_out;
 wire			    done;
+wire  [N-1:0]   count_out;
 
 N_bit_UP_counter counter_1      (
                                       .clk(clk),
@@ -29,7 +29,7 @@ initial begin
      rstn = 1'b1; #30;
      rstn = 1'b0; #50;
      rstn = 1'b1; #200;
-   	 $finish;
+     $finish;
 end
 
   
