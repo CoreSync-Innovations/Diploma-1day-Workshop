@@ -1,8 +1,8 @@
 module N_bit_UP_counter # (parameter N = 3) 
-  						            (
+                          (
                             input  wire           rstn,
-                            input  wire 		      clk,
-                            output reg 			      done,
+                            input  wire           clk,
+                            output reg            done,
                             output reg   [N-1:0]  count_out  
                           );                       
 
