@@ -1,8 +1,8 @@
 module DFF (
-  				input  wire rstn,
-  				input  wire clk,
-  				input  wire d_in,
-  				output reg q
+	           input  wire rstn,
+               input  wire clk,
+			   input  wire d_in,
+               output reg q
   		   );
  
 always @ (posedge clk or negedge rstn) begin
