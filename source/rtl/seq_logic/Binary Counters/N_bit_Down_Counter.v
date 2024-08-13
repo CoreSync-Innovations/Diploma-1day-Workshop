@@ -1,9 +1,9 @@
 module N_bit_DN_counter # (parameter N = 3) 
                 (
-                    input  wire           rstn,
-                    input  wire           clk,
-                    output reg            done,
-                    output reg   [N-1:0]  count_out  
+                  input  wire           rstn,
+                  input  wire           clk,
+                  output reg            done,
+                  output reg   [N-1:0]  count_out  
                 );                       
 
 always @ (posedge clk or negedge rstn) begin
