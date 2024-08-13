@@ -9,16 +9,16 @@ module N_bit_UP_counter # (parameter N = 3)
 always @ (posedge clk or negedge rstn) begin
   if (~rstn) begin
          count_out  <= '0;
-  		   done       <= 1'b0;
+         done <= 1'b0;
   end
   else begin
     if(count_out == '1) begin
         count_out  <= '0;
-    		done       <= 1'b1;
+        done       <= 1'b1;
     end
     else begin
-          count_out  <= count_out + 1;
-      		done       <= 1'b0;
+        count_out  <= count_out + 1;
+        done       <= 1'b0;
     end
   end
 end 
