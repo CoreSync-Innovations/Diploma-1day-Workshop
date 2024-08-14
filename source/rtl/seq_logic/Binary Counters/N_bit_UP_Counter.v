@@ -13,7 +13,7 @@ always @ (posedge clk or negedge rstn) begin
   end
   else begin
     if(count_out == {N{1'b1}}) begin       // {N{1'b1}} is equivalent to 1'b1 repeated N times ; this is called concatenation operator
-        count_out  <= '0;
+      count_out  <= {N{1'b0}};
         done       <= 1'b1;
     end
     else begin
