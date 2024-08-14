@@ -5,7 +5,19 @@ module ha (
               output wire carry
           );
 
-assign sum = a ^ b;
-assign carry = a & b;
+/* By default, the code compiles with the bitwise operators */  
+`ifndef BITWISE
+   assign sum = a ^ b;
+   assign carry = a & b;
+`endif 
 
+`ifdef LOGICAL
+   assign sum = a ^ b;
+   assign carry = a && b;
+`endif 
+
+`ifdef ARITHMETIC
+  assign {carry,sum} = a + b;
+`endif 
+  
 endmodule
