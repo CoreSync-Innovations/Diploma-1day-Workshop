@@ -8,12 +8,12 @@ module N_bit_DN_counter # (parameter N = 3)
 
 always @ (posedge clk or negedge rstn) begin
   if (~rstn) begin
-         count_out  <= '1;
+         count_out  <= {N{1'b1}};
          done       <= 1'b0;
   end
   else begin
-    if(count_out == '0) begin
-        count_out  <= '1;
+    if(count_out == {N{1'b0}}) begin
+        count_out  <= {N{1'b1}}; // {N{1'b1}} is equivalent to 1'b1 repeated N times ; this is called concatenation operator
         done       <= 1'b1;
     end
     else begin
